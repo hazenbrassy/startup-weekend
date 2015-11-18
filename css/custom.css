@@ -1,0 +1,313 @@
+body {
+	font-family: 'PT Sans', sans-serif;
+}
+h1, h2, h3, h4, h5 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+/* Nav Menu */
+
+#topNav {
+	text-align: center;
+}
+
+/* Main */
+#main {margin-bottom: 50px;}
+
+.ctaButtons {
+	margin-bottom: 15px;
+}
+.ctaButtons h4 {
+	text-align: center;
+}
+.ctaButtons .icon {
+	text-align: center;
+	font-size: 28px;
+}
+/* Sign Up */
+
+#logo {
+	margin: 80px 0px 30px;
+}
+#logo img {
+	width: 100%;
+}
+#homeText {
+	margin-bottom: 20px;
+	text-align: center; 
+	font-size: 16px;
+}
+#searchNow,
+#thankYouLogIn {
+	text-align: center;
+	max-width: 150px;
+	margin: 20px auto;
+}
+#searchNow .button,
+#thankYouLogIn .button {
+	padding: 8px 0px;
+	cursor: pointer;
+}
+
+/* Footer */
+footer {
+	height: 30px;
+	margin-top: 20px;
+	background-color: #333;
+}
+
+#logIn, #signUp {
+	position: absolute;
+	background: rgba(0,0,0,0.9);
+	width: 500px;
+	left: 50%;
+	margin-left: -250px;
+	top: 50px;
+	padding: 20px 30px;
+	z-index: 9;
+	display: none;
+}
+
+#logIn .logo, #signUp .logo {margin-bottom: 40px;}
+#logInClose, #signUpClose, #inviteClose {
+	position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 16px;
+    color: #FFF;
+    border: 2px solid #FFF;
+    padding: 5px;
+}
+.signUpModal:hover,
+.logInModal:hover {
+	text-decoration: none;
+	cursor: pointer;
+}
+#userName {
+	font-size: 44px;
+}
+.userImg {
+	text-align: center;
+}
+#addChild {
+	margin-top: 20px;
+}
+#addChild.btn-primary {
+	background-color: #707b7c;
+	border-color: transparent;
+}
+
+#showFilters {
+	display: none;
+}
+@media (max-width: 990px){
+	#userName {
+		text-align: center;
+	}
+	.friends {
+		display: inline-block;
+		margin-left: 20px;
+	}
+}
+@media (max-width: 760px){
+	#logIn, #signUp {
+		top: 0px;
+		width: 100%;
+		left: 0px;
+		margin: 0px;
+	}
+		#filters {
+		display: none;
+	}
+	#showFilters {
+		display: block;
+		width: 100%;
+	}
+	
+	#campResults h1 {
+		font-size: 24px;
+	}
+}
+
+#childSection {
+	padding: 15px;
+}
+
+.childImgEdit,
+.childCalEdit,
+.childProfEdit {
+	cursor: pointer;
+}
+.navbar-brand {
+	padding: 10px 15px;
+}
+.childBlock {
+	margin-bottom: 2px;
+	padding: 15px 0px;
+	background-color: #b2babb;
+}
+.childName {
+	font-size: 36px;
+	color: #FFF;
+}
+.childName input {
+	font-size: 18px;
+}
+#saveChildBtn {
+	padding: 6px 36px; 
+}
+.saveBlock .col-md-12 {
+	margin-top: 10px;
+}
+#preferences {
+	position: absolute;
+	top: 90px;
+	left: 50%;
+	margin-left: -250px;
+	width: 500px;
+	background-color: #DEDeDe;
+	padding: 20px;
+	
+}
+#preferences #savePreferences {
+	background-color: #707B7C;
+	border-color: transparent;
+	padding: 6px 36px;
+}
+#preferences .title {
+	font-size: 24px;
+}
+.prefGroup {
+	margin-bottom: 10px;
+}
+
+#inviteBuddies {
+	background-color: #b2babb;
+	padding: 20px;
+}
+#campResults .title a {
+	color: #000;
+	font-weight: bold;
+}
+#campResults .title a:hover {
+	text-decoration: none;
+	color: #509542;
+}
+#campResults .dateRange,
+#campResults .price {
+	font-style: italic;
+}
+#campResults .campImg img {
+	width: 100%;
+	max-width: 160px;
+	margin-bottom: 15px;
+}
+#campResults .row {
+	margin-top: 2px;
+}
+#basic-addon2 {
+	cursor: pointer;
+}
+
+#inviteBuddiesSuccess {
+	display: none;
+}
+#searchNow a {
+	display: block;
+}
+#searchNow a:hover {
+	text-decoration: none;
+}
+
+.navbar-inverse .navbar-nav li.activeAlerts i, 
+.navbar-inverse .navbar-nav li.activeAlerts i {
+	color: #F8A21F;
+}
+#alertMenu {
+	z-index: 999;
+}
+#alertMenu li {
+	padding: 5px;
+	transition: 2s all linear;
+	-webkit-transition: 2s all linear;
+}
+.activeAlerts #alertMenu li {
+	background: #555;
+}
+li.activeAlerts #alertMenu i {
+	color: #FFF;
+}
+#alertMenu {
+	position:absolute; 
+	right: 0px; 
+	width: 285px; 
+	text-align: left;
+	background: #333;
+	color: #fff;
+	padding: 15px 15px;
+	display: none;
+}
+#alertMenu li {
+	list-style: none;
+	line-height: 32px;
+}
+
+.addThis i {
+	color: #95a5a6;
+	font-size: 20px;
+}
+
+.campBlock {background-color: #eaeded; padding: 10px 0px;}
+.campBlock:hover {background-color: #d5dbdb;}
+.friends {margin-top: 10px;}
+.friends img {margin-right: 5px; margin-bottom: 5px;}
+
+.navbar-inverse {
+	background-color: #3a5d12;
+	border-color: transparent;
+}
+.navbar {
+	border-radius: 0px;
+}
+.navbar-inverse .navbar-nav li a {
+	color: #FFF;
+}
+.navbar-inverse .navbar-nav li a:hover {
+	color: #9D9D9D;
+}
+
+.childCalEdit i,
+.childCalEdit a {
+	line-height: 38px;
+	font-size: 36px;
+	color: #fff;
+}
+.childProfEdit i,
+.childProfEdit a {
+	line-height: 38px;
+	font-size: 40px;
+	color: #fff;
+}
+#userRow {
+	margin-top: 25px;
+}
+.buddiesTitle {
+	font-size: 16px;
+	color: #fff;
+}
+.addRemoveBuddies a {
+	font-size: 18px;
+	color: #707B7C;
+}
+.buddiesImages img {
+	margin-right: 10px;
+}
+#inviteSubmit {
+	background-color: #707B7C;
+	padding: 6px 26px;
+	border-color: transparent;
+}
+
+.navbar-nav li a {
+	line-height: 30px;
+}
